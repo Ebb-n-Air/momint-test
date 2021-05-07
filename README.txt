@@ -14,13 +14,13 @@ What is in this momo-repo:
 
 Your task:
 
-## Upload
+##Upload
 1. In the app directory, find the home page and modify it to emulate the app image provided
 2. Write javascript and appropriate node.js code to facilitate the upload of filetypes, strictly: ['jpeg', 'mp4', 'webm' ];
 3. Compress those filetypes accordingly (using libraries or any solution you feel best)
 4. Send the compressed file back to the device
 
-## Query
+##Query
 1. Write functionality to request data from the Api on the frontent
 2. Write a query wich will fetch all followers for a user (MainUser)  
     2.1 Each user in the user table should have an array of ID's representing the users that they follow
@@ -29,7 +29,7 @@ Your task:
     2.4. Performance is impoortant here (image 100 000+ queries)
 3. Return this data in simple JSON format; console.log 
 
-## Setup
+##Setup
 - Download and install MongoDb (recommend using Mongo Compass)
 - clone repo
 - `npm i` in each respective folder (front-end, Api)
