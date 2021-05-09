@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import {multer } from "multer";
 import zlib = require("zlib");
 import fs = require("fs");
 
