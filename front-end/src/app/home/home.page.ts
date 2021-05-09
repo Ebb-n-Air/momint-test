@@ -21,6 +21,7 @@ export class HomePage {
       
       reader.onload = (event:any) => {
         console.log('file selected');
+        console.log(event.target.result);
         this.http.post("http://localhost:3000/api/files/uploadFile", {
           media_data: event.target.result,
           file_name: file.name,
