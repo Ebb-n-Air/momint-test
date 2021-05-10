@@ -9,8 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class HomePage {
 
   constructor(private http: HttpClient) {}
-  private media_file:any;
-  private downloadedFile:any;
+
   public onFileSelected(event) {
     event.preventDefault();
     const file:File = event.target.files[0];
@@ -27,10 +26,17 @@ export class HomePage {
           file_name: file.name,
           extension: file.type
         })
-        .subscribe(data => {
-          console.log(data);    
-        });
+        .subscribe(data => this.downloadFile(data, "application/gzip"));
       }
     }
+  }
+
+  private downloadFile(data:any, type: string) {
+    let blob = new Blob([data], { type: type});
+    let url = window.URL.createObjectURL(blob);
+    let pwa = window.open(url);
+    if (!pwa || pwa.closed || typeof pwa.closed == 'undefined') {
+      alert( 'Please disable your Pop-up blocker and try again.');
+  }
   }
 }
