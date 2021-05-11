@@ -17,7 +17,7 @@ Your task:
 ##Upload
 1. In the app directory, find the home page and modify it to emulate the app image provided
 2. Write javascript and appropriate node.js code to facilitate the upload of filetypes, strictly: ['jpeg', 'mp4', 'webm' ];
-3. Compress those filetypes accordingly (using libraries or any solution you feel best)
+3. Compress those filetypes accordingly (using libraries or any solution you feel best) - return in the SAME format but compressed
 4. Send the compressed file back to the device
 
 ##Query
