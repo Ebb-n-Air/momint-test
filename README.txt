@@ -26,7 +26,7 @@ Your task:
     2.1 Each user in the user table should have an array of ID's representing the users that they follow
     2.2. You need to find all users where the MainUser ID is in their following Array 
     2.3. eg. Bob wants to see who follows him, Jane and Joe have followed Bob, and therefore have his user ID in their followers array
-    2.4. Performance is impoortant here (image 100 000+ queries)
+    2.4. Performance is impoortant here (imagine 100 000+ queries)
 3. Return this data in simple JSON format; console.log 
 
 ##Setup
