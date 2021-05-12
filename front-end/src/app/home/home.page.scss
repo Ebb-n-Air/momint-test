@@ -25,3 +25,19 @@
 #container a {
   text-decoration: none;
 }
+
+.galaxyBG {
+  background-image: url('../../assets/background-image.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+ion-page.HOME > ion-content{
+  background-color: transparent;
+}
+
+.momintLogo {
+  width: 50%;
+  text-align: center;
+}

@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv';
 import DbClient from "./services/db-client";
 
 dotenv.config();
-const port = process.env.PORT
+const port = 3000
 
 DbClient.connect()
   .then(() => {

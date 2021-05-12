@@ -1,0 +1,34 @@
+[{
+    "_id": {
+        "$oid": "609c01f2c5aa42216cbf66a3"
+    },
+    "Name": "James",
+    "Surname": "Peach",
+    "Age": 32,
+    "Following": ["609c01f2c5aa42216cbf66a4","609c01f2c5aa42216cbf66a6"]
+},
+{
+    "_id": {
+        "$oid": "609c01f2c5aa42216cbf66a4"
+    },
+    "Name": "John",
+    "Surname": "Snow",
+    "Age": 41
+},
+{
+    "_id": {
+        "$oid": "609c01f2c5aa42216cbf66a5"
+    },
+    "Name": "Mellissa",
+    "Surname": "Joan",
+    "Age": 21,
+    "Following": ["609c01f2c5aa42216cbf66a3","609c01f2c5aa42216cbf66a6"]
+},
+{
+    "_id": {
+        "$oid": "609c01f2c5aa42216cbf66a6"
+    },
+    "Name": "Mandisa",
+    "Surname": "Dubula",
+    "Age": 42
+}]
