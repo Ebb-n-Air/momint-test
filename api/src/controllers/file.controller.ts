@@ -11,22 +11,20 @@ export const uploadFile = async (req: Request, res: Response) => {
         let matches = uf.match(regex);
         let ext = matches[1];
         let data = matches[2]; 
-        const basePath ="C:/S/R/momint/momint-test/api/src/media-uploads/"; 
+        const basePath ="/src/media-uploads/"; 
         const src = basePath + fn; // TODO: replace hardcoded src val with environment variable
         console.log(src);
         fs.writeFile(src, data, {encoding: 'base64'}, function (err) {
-            const srcStream = fs.createReadStream(src);
-            const dest = src + ".gz";
-            const destStream = fs.createWriteStream(dest);
-            console.log('zipping file');
-            const zip = zlib.createGzip();
-            srcStream.pipe(zip).pipe(destStream);
-            res.download('.//media-uploads/' + fn, dest, function (err) {
-                if (err) {
-                    console.log(err);
-                } else {
-                    console.log('File downloaded');
-                }
+            const dest = "opt_" + src;
+            const convert = require("media-converter");
+            convert(src, dest, () => {
+                res.download('.//media-uploads/' + fn, dest, function (err) {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        console.log('File downloaded');
+                    }    
+                });
             });
         });
         
