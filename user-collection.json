@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "077a4f44-4c75-433a-afb1-354df8151c03",
+    "username": "adam",
+    "following": ["4d126365-39eb-4177-9cd1-78131f635d9c", "36e37234-ff50-44a1-937d-9e95ed246a64", "c2fbfd4a-9bbf-44b1-b6f3-12c8e5f609a3"]
+  },
+  {
+    "_id": "4d126365-39eb-4177-9cd1-78131f635d9c",
+    "username": "ahren",
+    "following": []
+  },
+  {
+    "_id": "36e37234-ff50-44a1-937d-9e95ed246a64",
+    "username": "josh",
+    "following": ["4d126365-39eb-4177-9cd1-78131f635d9c"]
+  },
+  {
+    "_id": "c2fbfd4a-9bbf-44b1-b6f3-12c8e5f609a3",
+    "username": "moses",
+    "following": ["4d126365-39eb-4177-9cd1-78131f635d9c"]
+  }
+]
