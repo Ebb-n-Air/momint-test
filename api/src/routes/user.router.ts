@@ -8,4 +8,5 @@ export const router = Router({
 
 //Example post request
 router.post('/', UserController.exampleUserMethod);
+router.post('/getFollowers', UserController.findFollowers);
 
