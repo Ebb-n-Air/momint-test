@@ -15,18 +15,22 @@ What is in this momo-repo:
 Your task:
 
 ##Upload
-1. In the app directory, find the home page and modify it to emulate the app image provided
+1. In the app directory, find the home page and modify it to look like the app image provided. 
 2. Write javascript and appropriate node.js code to facilitate the upload of filetypes, strictly: ['jpeg', 'mp4', 'webm' ];
 3. Compress those filetypes accordingly (using libraries or any solution you feel best) - return in the SAME format but compressed
 4. Send the compressed file back to the device
 
+This should result in the website uploading the file and immediately downloading the file back but the new file must be a lot smaller in size. 
+Upload a 5MB file and it should come back smaller than 5MB.
+
 ##Query
-1. Write functionality to request data from the Api on the frontent
-2. Write a query wich will fetch all followers for a user (MainUser)  
-    2.1 Each user in the user table should have an array of ID's representing the users that they follow
-    2.2. You need to find all users where the MainUser ID is in their following Array 
-    2.3. eg. Bob wants to see who follows him, Jane and Joe have followed Bob, and therefore have his user ID in their followers array
-    2.4. Performance is impoortant here (imagine 100 000+ queries)
+1. When the query button is clicked it needs to request data from the API.
+2. Create a collection in a mongo db to test this query before you start coding it. A json file has been provided for you to use. (user-collection.json)
+3. Write a query wich will fetch all followers for a user (MainUser)  
+    3.1 Each user in the user table should have an array of ID's representing the users that they follow
+    3.2. You need to find all users where the MainUser ID is in their following Array 
+    3.3. eg. Bob wants to see who follows him, Jane and Joe have followed Bob, and therefore have his user ID in their following array
+    3.4. Performance is impoortant here (imagine 100 000+ records)
 3. Return this data in simple JSON format; console.log 
 
 ##Setup
